@@ -1,0 +1,20 @@
+name: "Workshop"
+
+modules:
+  activate:
+  - 00-workshop-overview
+  - 01-wait-for-virtual-machines
+  - 02-access-virtual-machines
+  - 03-cluster-node-requirements
+  - 04-disable-system-swap
+  - 05-disable-network-firewall
+  - 06-enable-legacy-iptables
+  - 07-configure-networking
+  - 08-validate-cgroups-version
+  - 09-configure-selinux-policy
+  - 10-disable-systemd-resolver
+  - 11-wait-for-system-reboot
+  - 12-install-container-runtime
+  - 13-install-kubernetes
+  - 14-configure-master-node
+  - 99-workshop-summary

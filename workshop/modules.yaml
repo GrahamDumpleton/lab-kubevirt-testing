@@ -1,0 +1,35 @@
+modules:
+  00-workshop-overview:
+    name: Workshop Overview
+    exit_sign: Start Workshop
+  01-wait-for-virtual-machines:
+    name: Wait for Virtual Machines
+  02-access-virtual-machines:
+    name: Access Virtual Machines
+  03-cluster-node-requirements:
+    name: Cluster Node Requirements
+  04-disable-system-swap:
+    name: Disable System Swap
+  05-disable-network-firewall:
+    name: Disable Network Firewall
+  06-enable-legacy-iptables:
+    name: Enable Legacy iptables
+  07-configure-networking:
+    name: Configure Networking
+  08-validate-cgroups-version:
+    name: Validate cgroups Version
+  09-configure-selinux-policy:
+    name: Configure SELinux Policy
+  10-disable-systemd-resolver:
+    name: Disable systemd Resolver
+  11-wait-for-system-reboot:
+    name: Wait for System Reboot
+  12-install-container-runtime:
+    name: Install Container Runtime
+  13-install-kubernetes:
+    name: Install Kubernetes
+  14-configure-master-node:
+    name: Configure Master Node
+  99-workshop-summary:
+    name: Workshop Summary
+    exit_sign: Finish Workshop
