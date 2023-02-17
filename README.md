@@ -1,3 +1,4 @@
-= Workshop
+lab-kubevirt-testing
+====================
 
-Workshop description
+Workshop to test KubeVirt integration with Educates.
