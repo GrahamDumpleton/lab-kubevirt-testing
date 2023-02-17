@@ -208,7 +208,8 @@ spec:
                 userData: |-
                   #cloud-config
                   password: $(services_password)
-                  chpasswd: { expire: False }
+                  chpasswd:
+                    expire: false
                   runcmd:
                   - echo "set enable-bracketed-paste off" >> /etc/inputrc
     - apiVersion: v1
@@ -287,7 +288,8 @@ spec:
                 userData: |-
                   #cloud-config
                   password: $(services_password)
-                  chpasswd: { expire: False }
+                  chpasswd:
+                    expire: false
                   runcmd:
                   - echo "set enable-bracketed-paste off" >> /etc/inputrc
     - apiVersion: v1
@@ -366,7 +368,8 @@ spec:
                 userData: |-
                   #cloud-config
                   password: $(services_password)
-                  chpasswd: { expire: False }
+                  chpasswd:
+                    expire: false
                   runcmd:
                   - echo "set enable-bracketed-paste off" >> /etc/inputrc
     - apiVersion: v1
