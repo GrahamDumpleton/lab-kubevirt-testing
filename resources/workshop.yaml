@@ -5,6 +5,7 @@ metadata:
 spec:
   title: "Workshop"
   description: "Workshop description."
+  duration: 120m
   workshop:
     files:
     - image:
@@ -16,6 +17,8 @@ spec:
       - .ssh/**
   session:
     namespaces:
+      security:
+        policy: privileged
       budget: x-large
       limits:
         max:
