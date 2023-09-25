@@ -1,6 +1,7 @@
 name: Publish Workshop
 
 on:
+  workflow_dispatch:
   push:
     tags:
       - "[0-9]+.[0-9]+"
@@ -12,13 +13,11 @@ jobs:
   publish-workshop:
     runs-on: ubuntu-latest
 
-    if: ${{github.repository != 'vmware-tanzu-labs/educates-workshop-templates'}}
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Create release
-        uses: vmware-tanzu-labs/educates-github-actions/publish-workshop@v5
+        uses: vmware-tanzu-labs/educates-github-actions/publish-workshop@main
         with:
           token: ${{secrets.GITHUB_TOKEN}}
