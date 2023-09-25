@@ -6,10 +6,12 @@ spec:
   title: "Workshop"
   description: "Workshop description."
   duration: 120m
+  publish:
+    image: "$(image_repository)/lab-kubevirt-testing-files:$(workshop_version)"
   workshop:
     files:
     - image:
-        url: "$(image_repository)/lab-kubevirt-testing-files:latest"
+        url: "$(image_repository)/lab-kubevirt-testing-files:$(workshop_version)"
       includePaths:
       - /workshop/**
       - /exercises/**
